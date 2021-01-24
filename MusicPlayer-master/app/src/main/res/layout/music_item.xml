@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/audio_item"
+    android:layout_margin="5dp"
+    android:focusable="true"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:id="@+id/music_img"
+            app:siRadius="6dp"
+            app:siBorderWidth="0dp"
+            app:siBorderColor="@color/colorAccent"
+            app:siSquare="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/music" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:maxLines="1"
+            android:layout_toEndOf="@+id/music_img"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fontColor"
+            android:layout_toStartOf="@id/menuMore"
+            android:id="@+id/music_file_name"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/menuMore"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_more_vert"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
